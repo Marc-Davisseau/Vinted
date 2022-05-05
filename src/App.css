@@ -1,7 +1,20 @@
 .App {
   text-align: center;
+
 }
 
 Header {
   display: flex;
+}
+.Sign {
+  display: flex;
+flex-direction: column;
+width: 500px;
+}
+
+.Sign  > input {
+  background-color: rgb(255, 255, 255);
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }

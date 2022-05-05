@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 const Header =()=>{
+    const navigate = useNavigate();
+
 return(
 
 <header>
@@ -8,7 +12,9 @@ return(
 <img src="P11-Vinted2/vinted2/src/img/logo.svg" alt="" />
 </article>
 <article>
-<button>S'inscrire</button>
+<button
+onClick={() => navigate("/user/signup")}
+>S'inscrire</button>
 </article>
 <article>
 <button>Se connecter</button>    
